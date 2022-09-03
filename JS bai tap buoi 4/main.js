@@ -82,21 +82,21 @@ if(ngay>0 && thang>0 && nam>0 && thang<13 && ngay<=(ngayTrongThang(thang,nam))){
     nd=ngay+1;
     if(thang!=12 && ngay==ngayTrongThang(thang,nam)){
         nd=1;
-        m=m+1;
+        mm=thang+1;
     }else if(thang==12 && ngay==ngayTrongThang){
         nd=1;
-        ny=y+1;
+        ny=nam+1;
         nm=1;
     }else if(thang==2){
         if(nhuan(nam)==true){
             if(ngay==29){
                 nd=1;
-                nm=m+1;
+                nm=thang+1;
             }
         }else{
             if(ngay==28){
                 nd==1;
-                nm=m+1;
+                nm=thang+1;
             }
         }
     }
